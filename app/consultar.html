@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/consultar.css">
+</head>
+<body>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-btn">
+                <a href="app.php">Agregar</a>
+                <a href="descargar.php">Descargar</a>
+                <a href="consultar.html">Consultar</a>
+            </div>
+        </div>
+    </footer>
+    <main>
+        <header>
+            <div class="header-container">
+                <h1>Casa de la Verdad</h1>
+                <div class="header-btn">
+                    <a href="app.php">Agregar</a>
+                    <a href="descargar.php">Descargar</a>
+                    <a href="consultar.html">Consultar</a>
+                </div>
+                <a onclick="abrir_pop()" class="salir-btn" href="#">CERRAR</a>
+            </div>
+        </header>
+
+        <div class="descargas-sec">
+            <div class="descargas-sec-container">
+                <div class="funciones">
+                    <div class="descargar">
+                        <form action="../assets/php/consultar.php.php" method="post">
+                            <h2>Consultar mes</h2>
+                            <div class="form-group">
+                                <select id="mes" name="mes" required>
+                                    <option value="">Seleccione un mes</option>
+                                    <option value="enero">Enero</option>
+                                    <option value="febrero">Febrero</option>
+                                    <option value="marzo">Marzo</option>
+                                    <option value="abril">Abril</option>
+                                    <option value="mayo">Mayo</option>
+                                    <option value="junio">Junio</option>
+                                    <option value="julio">Julio</option>
+                                    <option value="agosto">Agosto</option>
+                                    <option value="septiembre">Septiembre</option>
+                                    <option value="octubre">Octubre</option>
+                                    <option value="noviembre">Noviembre</option>
+                                    <option value="diciembre">Diciembre</option>
+                                </select>
+                            </div>
+                            <div class="btn-descargar">
+                                <button type="submit">Consultar</button>
+                            </div>
+                        </form>
+                    </div>
+        
+        
+                    <div class="descargar-cedula">
+                        <form action="../assets/php/consultar.php.php" method="post">
+                            <h2>Consultar persona</h2>
+                            <div class="form-group">
+                                <input placeholder="Cedula" id="des-cedula" name="cedula" type="text">
+                            </div>
+                            <div class="btn-descargar">
+                                <button type="submit">Consultar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

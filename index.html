@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://kit.fontawesome.com/6378b72010.js" crossorigin="anonymous"></script>
+    <script src="assets/js/functions.js"></script>
+</head>
+<body>
+    <main>
+        <!-- INICIAR SESION POP -->
+        <div id="pop" class="acc-pop">
+            <div class="cerrar-pop">
+                <a onclick="cerrar_pop()" href="#">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="pop-container">
+                <form action="">
+                    <h1>Inicia Sesion</h1>
+                    <label for="id-usuario">Usuario:</label>
+                    <input id="id-usuario" placeholder="Ingrese usuario" type="text">
+
+                    <label for="id-clave">Clave:</label>
+                    <input id="id-usuario" placeholder="Ingrese clave" type="text">
+
+                    <button id="ini-btn" class="iniciar-btn">INICIAR</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- MAIN -->
+        <div class="main-container">
+            <header>
+                <div class="header-container">
+                    <h1>Casa de la Verdad</h1>
+                    <div class="acc-btn">
+                        <a onclick="abrir_pop()" href="#">ACCEDER</a>
+                    </div>
+                </div>
+            </header>
+            <div class="main-sec">
+                <div class="main-sec-con">
+                    <h1>Aplicacion Web Contaduria</h1>
+                    <p>Iglesia Casa de la Verdad</p>
+                    <div class="acc-btn">
+                        <a onclick="abrir_pop()" href="#">ACCEDER</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>
